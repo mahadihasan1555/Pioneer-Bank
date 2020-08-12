@@ -2,9 +2,37 @@ body{
     font-weight: 600;
     padding: 100px;
 }
+/* login-form */
 .submit-area{
     margin-top: 3rem;
     box-shadow: 5px 5px 10px  gray;
     border-radius: 5px;
     padding: 40px 30px;
+}
+/* transaction from */
+#transaction-area{
+    display: none;
+}
+.deposit{
+    background-color: slateblue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    margin:  0 20px;
+    
+}
+.withdraw{
+    background-color: salmon;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    margin: 0 20px;
+}
+.balance{
+    background-color: orange;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    box-sizing: border-box;
+    margin:  0 20px;
 }

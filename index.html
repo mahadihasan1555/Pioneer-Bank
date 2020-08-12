@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div class="login-area">
+    <div id="login-area">
         <!-- title area -->
         <h1 class="text-center">Welcome to Pioneer Bank</h1>
         <hr>
@@ -18,10 +18,66 @@
             <h3>Login</h3>
             <input type="text" class="form-control" placeholder="jhon@gmail.com">
             <br>
-            <input type="password" name="" id="" class="form-control" placeholder="*******">
+            <input type="password" name="" id="" class="form-control" placeholder="Password">
             <br>
-            <button class="btn btn-success">Enter</button>
+            <button id="login" class="btn btn-success">Enter</button>
         </div>
     </div>
+
+    <!-- Transaction Area -->
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit">
+                    <h5>Deposit</h5>
+                    <h2>$ 00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw">
+                    <h5>Withdraw</h5>
+                    <h2>$ 00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="balance">
+                <h5>Balance</h5>
+                <h2>$ 1200</h2>
+              </div>
+            </div>
+        </div>
+        <!-- deposit and withdraw box -->
+    <div class="row">
+        <div class="col-md-6">
+           <div class="submit-area">
+                <h3>Deposit</h3>
+                <input class="form-control" type="number" placeholder="$ amount you want to deposit">
+                <br>
+                <button class="btn btn-success">Deposit</button>
+           </div>
+        </div>
+        <div class="col-md-6">
+            <div class="submit-area">
+                <h3>Withdraw</h3>
+                <input class="form-control" type="number" placeholder="$ amount you want to withdraw"> 
+                <br>
+                <button class="btn btn-success">Withdraw</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+
+    <!-- added JavaScript files -->
+    <script>
+        const loginBtn = document.getElementById("login");
+        loginBtn.addEventListener("click", function(){
+           const loginArea = document.getElementById("login-area");
+           loginArea.style.display = ("none");
+           const transactionArea = document.getElementById("transaction-area");
+           transactionArea.style.display = "block";
+        })
+    </script>
 </body>
 </html>
