@@ -1,0 +1,10 @@
+body{
+    font-weight: 600;
+    padding: 100px;
+}
+.submit-area{
+    margin-top: 3rem;
+    box-shadow: 5px 5px 10px  gray;
+    border-radius: 5px;
+    padding: 40px 30px;
+}
